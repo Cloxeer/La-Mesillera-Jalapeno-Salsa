@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "projectType": "product",
+  "sections": [
+    "nav",
+    "badges",
+    "hero",
+    "product",
+    "ingredients",
+    "stock",
+    "footer"
+  ]
+}

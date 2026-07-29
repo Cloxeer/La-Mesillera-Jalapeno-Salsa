@@ -1,0 +1,152 @@
+type: product
+meta:
+  title: La Mesillera Jalapeño Salsa | Made in Las Cruces, NM
+  description: Small-batch jalapeño salsa from Las Cruces, New Mexico. Tomato,
+    jalapeño, garlic, lime. Call or text to order, or ask your local store to
+    carry it.
+theme:
+  fontDisplay: Bitter
+  fontBody: Cabin
+  colorText: "#843216"
+  colorMuted: "#3f5c0a"
+  colorAccent: "#d33a11"
+  colorBackground: "#f7db9a"
+  colorSurface: "#fdd566"
+business:
+  name: La Mesillera Jalapeño Salsa
+  slogan: A Taste of Home
+  phone: 575-449-6063
+  phoneTel: "5754496063"
+  email: LaMesilleraJalapenoSalsa@gmail.com
+  city: Las Cruces
+  state: NM
+  zip: "88007"
+  facebookUrl: https://www.facebook.com/
+nav:
+  logo: /images/wordmark.png
+  links:
+    - label: The Salsa
+      href: "#salsa"
+    - label: Ingredients
+      href: "#ingredients"
+    - label: Stock Us
+      href: "#stock"
+  logoShape: natural
+hero:
+  tag: Las Cruces, New Mexico
+  headline: |-
+    Small-batch jalapeño salsa,
+    made the way home tastes.
+  slogan: “A Taste of Home”
+  subtext: One recipe, made in small batches and pressed fresh here in the Mesilla
+    Valley.
+  image: /images/IngredientsHIREZRB.png
+  imageAlt: Fresh tomato, jalapeño, garlic and lime, the four ingredients of La
+    Mesillera salsa
+  divider: /images/ChipsAndSalsaRB.png
+  dividerScale: "50"
+  primaryCta:
+    label: Order by Phone
+    href: tel:5754496063
+  secondaryCta:
+    label: Stock Our Salsa
+    href: "#stock"
+badges:
+  - Small Batch
+  - Real Ingredients
+  - Made in Las Cruces, NM
+product:
+  title: One salsa. Done right.
+  description: "We make one thing and we make it well: a jalapeño salsa with a
+    little kick and a lot of flavor. Heat that hits just right, without the
+    burn."
+  image: ""
+  imageAlt: Jar of La Mesillera jalapeño salsa
+  details:
+    - label: Heat
+      value: A little kick, a lot of flavor
+    - label: Size
+      value: Call for current jar sizes
+    - label: Price
+      value: Call or text for pricing
+  note: Professionally bottled and shelf-stable, so every jar tastes the same as
+    the last.
+ingredients:
+  title: Four ingredients. That's it.
+  subtitle: Everything in the jar, nothing you can't pronounce. Best with a big
+    bowl of chips.
+  image: ""
+  imageAlt: Tortilla chips with a bowl of La Mesillera jalapeño salsa
+  items:
+    - name: Tomato
+      description: The ripe, red base of every jar.
+    - name: Jalapeño
+      description: The kick. Fresh green heat that hits just right.
+    - name: Garlic
+      description: Warmth and depth in every bite.
+    - name: Lime
+      description: A squeeze of bright to finish it off.
+story:
+  title: The recipe behind La Mesillera
+  paragraphs:
+    - La Mesillera started in Terry Evaro's kitchen in Las Cruces, New Mexico.
+      It's a family recipe made for salsa lovers who like it just perfect.
+    - Every jar is pressed for us by The Fresh Chile Co., a commercial food
+      producer right here in Las Cruces. Same recipe, same ingredients, made to
+      commercial food-safety standards. A taste of home, in every jar.
+whereToBuy:
+  title: Where to find it
+  intro: We're a small operation today, and growing. Here's how to get a jar right
+    now.
+  options:
+    - title: Order direct
+      description: Call or text 575-449-6063 and we'll set you up. Local pickup in Las
+        Cruces, NM.
+    - title: Local shelves
+      description: We're working on bringing La Mesillera to stores and markets around
+        the Mesilla Valley. Check back soon.
+  note: Don't see us at your favorite store? Ask them to carry La Mesillera, or
+    let us know and we'll reach out.
+stock:
+  title: Carry La Mesillera in your store
+  body: One recipe, one SKU, easy to stock. We'd love to see La Mesillera on your
+    shelf.
+  points:
+    - Shelf-stable and ready for retail
+    - Produced in a commercial facility in Las Cruces
+    - One salsa, simple to order and reorder
+  cta:
+    label: Talk to Terry
+    href: tel:5754496063
+  note: Or email LaMesilleraJalapenoSalsa@gmail.com and we'll get back to you.
+contact:
+  title: Say hello
+  body: Questions, orders, or just salsa talk. We'd love to hear from you.
+footer:
+  links:
+    - label: The Salsa
+      href: "#salsa"
+    - label: Ingredients
+      href: "#ingredients"
+    - label: Stock Us
+      href: "#stock"
+  copyright: © 2026 La Mesillera Jalapeño Salsa · Las Cruces, NM 88007
+imageDisplay:
+  hero.divider:
+    objectPosition: 50% 50%
+    objectFit: contain
+    rotation: 0
+    scale: 1.3061
+    offset:
+      x: 14.77
+      y: 0
+    area:
+      x: 0.409
+      y: 7.514
+      width: 76.566
+      height: 84.971
+    sourceCrop:
+      x: 0.409
+      y: 0
+      width: 76.566
+      height: 100
