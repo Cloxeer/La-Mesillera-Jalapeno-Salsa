@@ -942,6 +942,23 @@ document.addEventListener('click', function(e) {
 });
 
 (function () {
+  var mob = document.querySelector('.mob');
+  var ham = document.querySelector('.ham');
+  if (!mob || !ham) return;
+  function closeMenu() { mob.classList.remove('open'); }
+  // Tapping anywhere outside the open menu — but not the hamburger toggle itself — closes it.
+  document.addEventListener('click', function (e) {
+    if (!mob.classList.contains('open')) return;
+    if (mob.contains(e.target) || ham.contains(e.target)) return;
+    closeMenu();
+  });
+  // Scrolling closes it so the menu never floats detached over the page.
+  window.addEventListener('scroll', function () {
+    if (mob.classList.contains('open')) closeMenu();
+  }, { passive: true });
+})();
+
+(function () {
   var track = document.querySelector('.hero-divider-track');
   if (!track) return;
 
