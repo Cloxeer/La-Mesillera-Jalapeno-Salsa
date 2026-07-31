@@ -332,7 +332,14 @@ main { margin-top: 68px; }
   gap: 56px;
   align-items: center;
 }
+/* Clip the framed photo so a crop/zoom (transform: scale) stays inside its frame and
+   never spills past the viewport — the same containment the hero-divider uses. */
+.product-photo {
+  overflow: hidden;
+  border-radius: 12px;
+}
 .product-photo img {
+  max-width: 100%;
   border-radius: 12px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
