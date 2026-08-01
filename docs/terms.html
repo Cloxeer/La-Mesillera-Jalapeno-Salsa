@@ -709,6 +709,8 @@ footer .rickrack-top {
 .footer-links a:hover { color: var(--color-background); }
 .footer-rule { border: none; border-top: 1px solid var(--color-tertiary); opacity: 0.5; margin-bottom: 22px; }
 .footer-copy { font-size: 12px; color: var(--color-surface); }
+.bb-footer-credit { color: var(--color-surface); }
+.bb-footer-credit a { color: inherit; }
 .footer-legal {
   display: flex;
   gap: 10px;
@@ -828,6 +830,15 @@ html.layout-mobile .stock-inner { padding: 44px 20px 52px; }
 html.layout-mobile .contact-grid { grid-template-columns: 1fr; gap: 28px; }
 html.layout-mobile .mob a { padding: 14px 20px; }
 
+
+.nav-actions{display:flex;align-items:center;gap:14px;flex-shrink:0;}
+.lang-toggle{display:inline-flex;align-items:center;gap:.28em;padding:.24em .6em;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.03em;line-height:1;cursor:pointer;opacity:.8;transition:opacity .15s ease,background-color .15s ease;-webkit-tap-highlight-color:transparent;}
+.lang-toggle:hover{opacity:1;background:color-mix(in srgb,currentColor 10%,transparent);}
+.lang-toggle:focus-visible{outline:2px solid currentColor;outline-offset:2px;}
+.lang-toggle-opt{opacity:.4;transition:opacity .15s ease;}
+.lang-toggle[data-active-lang="en"] .lang-toggle-opt[data-lang="en"],
+.lang-toggle[data-active-lang="es"] .lang-toggle-opt[data-lang="es"]{opacity:1;}
+.lang-toggle-sep{opacity:.35;font-weight:400;}
 </style>
 </head>
 <body>
@@ -842,10 +853,13 @@ html.layout-mobile .mob a { padding: 14px 20px; }
     <li><a href="buy.html"><span data-halite-path='["nav","links","2","label"]'>Where to Buy</span></a></li>
     <li><a href="stock.html"><span data-halite-path='["nav","links","3","label"]'>Stock Us</span></a></li>
   </ul>
-  <a href="tel:5754496063" class="nav-phone"><span data-halite-path='["business","phone"]'>575-449-6063</span></a>
-  <button class="ham" aria-label="Open menu" onclick="document.querySelector('.mob').classList.toggle('open')">
+  <div class="nav-actions"><button class="lang-toggle" type="button" data-lang-toggle data-active-lang="en" aria-label="Switch language">
+    <span class="lang-toggle-opt" data-lang="en">EN</span>
+    <span class="lang-toggle-sep" aria-hidden="true">/</span>
+    <span class="lang-toggle-opt" data-lang="es">ES</span>
+  </button><a href="tel:5754496063" class="nav-phone"><span data-halite-path='["business","phone"]'>575-449-6063</span></a><button class="ham" aria-label="Open menu" onclick="document.querySelector('.mob').classList.toggle('open')">
     <span></span><span></span><span></span>
-  </button>
+  </button></div>
 </nav>
 
 <div class="mob" role="navigation" aria-label="Mobile navigation">
@@ -902,6 +916,10 @@ html.layout-mobile .mob a { padding: 14px 20px; }
     <span class="footer-legal-sep" aria-hidden="true">·</span>
     <a href="terms.html"><span data-halite-path='["labels","termsLabel"]'>Terms of Use</span></a>
   </nav>
+  
+  <div class="bb-footer-credit" style="margin:1.25rem auto 0;padding-top:1rem;border-top:1px solid currentColor;max-width:90%;text-align:center;font-size:0.75rem;line-height:1.6;letter-spacing:0.02em;opacity:0.75;">
+    <span data-halite-path='["footerCredit","prefix"]'>Created by</span> <span data-halite-path='["footerCredit","haliteText"]'>Halite Studio</span> <span>&amp;</span> <span data-halite-path='["footerCredit","arrowheadText"]'>ArrowHead Center by Nusenda</span>
+  </div>
 </footer>
 
 <script>
@@ -985,6 +1003,37 @@ document.addEventListener('click', function(e) {
   requestAnimationFrame(frame);
 })();
 </script>
+<script>window.__HALITE_I18N_ES__={"business.slogan":"Un Sabor de Casa","nav.links.0.label":"La Salsa","nav.links.1.label":"Ingredientes","nav.links.2.label":"Dónde Comprar","nav.links.3.label":"Para Tiendas","hero.tag":"Las Cruces, Nuevo México","hero.headline":"Salsa de jalapeño en lotes pequeños,\nhecha como sabe el hogar.","hero.slogan":"«Un Sabor de Casa»","hero.subtext":"Una sola receta, hecha en lotes pequeños y preparada fresca aquí en el Valle de Mesilla.","hero.primaryCta.label":"Ordenar por Teléfono","hero.secondaryCta.label":"Vende Nuestra Salsa","badges.0":"Lotes Pequeños","badges.1":"Ingredientes Reales","badges.2":"Hecha en Las Cruces, NM","product.title":"Una salsa. Hecha bien.","product.description":"Hacemos una sola cosa y la hacemos bien: una salsa de jalapeño con un poco de picor y mucho sabor. Un picante en su punto, sin quemar.","product.highlights.0":"¡Saborea el picante sin que te queme!","product.highlights.1":"Para los amantes de la salsa que la quieren justa y perfecta","product.highlights.2":"¡Un poco de picor, mucho sabor!","product.highlights.3":"Un picante en su punto","product.note":"Embotellada profesionalmente y estable en anaquel, para que cada frasco sepa igual que el anterior.","ingredients.title":"Cuatro ingredientes. Nada más.","ingredients.subtitle":"Todo lo que hay en el frasco, nada que no puedas pronunciar. Mejor con un buen plato de totopos.","ingredients.items.0.name":"Tomate","ingredients.items.0.description":"La base roja y madura de cada frasco.","ingredients.items.1.name":"Jalapeño","ingredients.items.1.description":"El picor. Picante verde y fresco, en su punto.","ingredients.items.2.name":"Ajo","ingredients.items.2.description":"Calidez y profundidad en cada bocado.","ingredients.items.3.name":"Limón","ingredients.items.3.description":"Un toque cítrico para rematar.","story.title":"La receta detrás de La Mesillera","story.paragraphs.0":"La Mesillera nació en la cocina de Terry Evaro en Las Cruces, Nuevo México. Es una receta familiar hecha para los amantes de la salsa que la quieren justa y perfecta.","story.paragraphs.1":"Cada frasco lo prepara para nosotros The Fresh Chile Co., un productor de alimentos comercial aquí mismo en Las Cruces. La misma receta, los mismos ingredientes, hechos con estándares comerciales de seguridad alimentaria. Un sabor de casa, en cada frasco.","whereToBuy.title":"Dónde encontrarla","whereToBuy.intro":"Hoy somos una operación pequeña, y estamos creciendo. Así puedes conseguir un frasco ahora mismo.","whereToBuy.options.0.title":"Ordena directo","whereToBuy.options.0.description":"Llama o manda mensaje al 575-449-6063 y te ayudamos. Recogida local en Las Cruces, NM.","whereToBuy.options.1.title":"En tiendas locales","whereToBuy.options.1.description":"Estamos trabajando para llevar La Mesillera a tiendas y mercados por todo el Valle de Mesilla. Vuelve pronto.","whereToBuy.note":"¿No nos ves en tu tienda favorita? Pídeles que vendan La Mesillera, o avísanos y nos comunicamos.","stock.title":"Vende La Mesillera en tu tienda","stock.body":"Un solo producto que vender — fácil de pedir, fácil de resurtir, y siempre la misma gran salsa. Nos encantaría ver La Mesillera en tu anaquel.","stock.points.0":"Estable en anaquel y lista para la venta","stock.points.1":"Producida en una instalación comercial en Las Cruces","stock.points.2":"Una sola salsa, fácil de pedir y resurtir","stock.cta.label":"Habla con Terry","stock.note":"O escribe a LaMesilleraJalapenoSalsa@gmail.com y te respondemos.","contact.title":"Salúdanos","contact.body":"Preguntas, pedidos, o solo para hablar de salsa. Nos encantaría saber de ti.","footer.links.0.label":"La Salsa","footer.links.1.label":"Ingredientes","footer.links.2.label":"Dónde Comprar","footer.links.3.label":"Para Tiendas","privacy.title":"Política de Privacidad","privacy.updated":"Última actualización: julio de 2026","privacy.body.0":"La Mesillera Jalapeño Salsa («nosotros») respeta tu privacidad. Esta política explica qué información recopilamos a través de este sitio web y cómo la usamos.","privacy.body.1":"No vendemos productos ni aceptamos pagos a través de este sitio, y no te pedimos crear una cuenta. Puedes navegar por todas las páginas sin darnos ninguna información personal.","privacy.body.2":"Si decides llamarnos, enviarnos un mensaje o un correo para hacer un pedido o una pregunta, recibimos los datos de contacto que compartes con nosotros, como tu nombre, número de teléfono o correo electrónico. Usamos esa información solo para responderte y para cumplir con los pedidos que nos solicitas.","privacy.body.3":"Para entender cómo se usa nuestro sitio, podemos usar analíticas respetuosas con la privacidad y sin cookies, que cuentan las visitas a las páginas y nos muestran cuáles son populares. Esto no te identifica personalmente ni instala cookies de publicidad o rastreo en tu dispositivo.","privacy.body.4":"No vendemos, alquilamos ni intercambiamos tu información personal. Solo podemos compartirla con proveedores de servicios de confianza que nos ayudan a operar el negocio, como la cocina comercial que embotella nuestra salsa, y solo en la medida necesaria para atenderte.","privacy.body.5":"Puedes contactarnos en cualquier momento para preguntar qué información tenemos sobre ti, corregirla o pedir que la eliminemos, y haremos todo lo posible por atender tu solicitud.","privacy.body.6":"Este sitio no está dirigido a niños, y no recopilamos información a sabiendas de menores de 13 años.","privacy.body.7":"Podemos actualizar esta Política de Privacidad de vez en cuando. Cuando lo hagamos, cambiaremos la fecha de «última actualización» que aparece arriba.","privacy.body.8":"¿Preguntas sobre esta política? Llámanos o envíanos un mensaje al 575-449-6063, o escribe a LaMesilleraJalapenoSalsa@gmail.com.","terms.title":"Términos de Uso","terms.updated":"Última actualización: julio de 2026","terms.body.0":"Bienvenido al sitio web de La Mesillera Jalapeño Salsa. Al usar este sitio, aceptas estos Términos de Uso. Si no estás de acuerdo, por favor no uses el sitio.","terms.body.1":"Este sitio web se ofrece como información general sobre nuestra salsa y nuestro pequeño negocio. No es una oferta para vender productos en línea. Los pedidos se coordinan directamente con nosotros por teléfono, mensaje o correo.","terms.body.2":"Trabajamos para mantener la información de este sitio precisa y actualizada, pero no garantizamos que sea completa o esté libre de errores. Los detalles del producto, la disponibilidad y los precios pueden cambiar en cualquier momento sin previo aviso.","terms.body.3":"Todo el contenido de este sitio, incluidos nuestro nombre, logotipo, fotografías y texto, pertenece a La Mesillera Jalapeño Salsa y no puede copiarse ni reutilizarse sin nuestro permiso.","terms.body.4":"Este sitio y su contenido se ofrecen «tal cual», sin garantías de ningún tipo. En la máxima medida permitida por la ley, no somos responsables de ningún daño que surja del uso de este sitio.","terms.body.5":"Nuestro sitio puede enlazar a otros sitios web que no controlamos. No somos responsables del contenido ni de las prácticas de esos sitios.","terms.body.6":"Estos Términos de Uso se rigen por las leyes del Estado de Nuevo México, Estados Unidos.","terms.body.7":"Podemos actualizar estos Términos de Uso de vez en cuando. El uso continuo del sitio significa que aceptas la versión vigente.","terms.body.8":"¿Preguntas? Llámanos o envíanos un mensaje al 575-449-6063, o escribe a LaMesilleraJalapenoSalsa@gmail.com."};</script>
+<script>(function(){
+  var dict = window.__HALITE_I18N_ES__ || {};
+  var toggle = document.querySelector('[data-lang-toggle]');
+  var nodes = [];
+  document.querySelectorAll('[data-halite-path]').forEach(function(el){
+    var raw = el.getAttribute('data-halite-path'), key;
+    try { key = JSON.parse(raw).join('.'); } catch(e){ return; }
+    if (!Object.prototype.hasOwnProperty.call(dict, key)) return;
+    var rich = el.hasAttribute('data-halite-rich');
+    nodes.push({ el: el, key: key, rich: rich, en: rich ? el.innerHTML : el.textContent });
+  });
+  function apply(lang){
+    for (var i=0;i<nodes.length;i++){
+      var n = nodes[i];
+      var val = (lang === 'es' && dict[n.key] != null) ? dict[n.key] : n.en;
+      if (n.rich) { n.el.innerHTML = val; } else { n.el.textContent = val; }
+    }
+    document.documentElement.lang = lang;
+    if (toggle) toggle.setAttribute('data-active-lang', lang);
+    try { localStorage.setItem('halite-lang', lang); } catch(e){}
+  }
+  var saved = 'en';
+  try { saved = localStorage.getItem('halite-lang') || 'en'; } catch(e){}
+  apply(saved === 'es' ? 'es' : 'en');
+  if (toggle){
+    toggle.addEventListener('click', function(){
+      apply(toggle.getAttribute('data-active-lang') === 'es' ? 'en' : 'es');
+    });
+  }
+})();</script>
 
 </body>
 </html>
