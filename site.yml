@@ -136,9 +136,9 @@ i18n:
       escribe a LaMesilleraJalapenoSalsa@gmail.com.
 meta:
   title: La Mesillera Jalapeño Salsa | Made in Las Cruces, NM
-  description: Small-batch jalapeño salsa from Las Cruces, New Mexico. Tomato,
-    jalapeño, garlic, lime. Call or text to order, or ask your local store to
-    carry it.
+  description: Jalapeño salsa made with authentic ingredients and flavors, from
+    Las Cruces, New Mexico. Tomato, jalapeño, garlic, lime. Call or text to
+    order, or ask your local store to carry it.
 theme:
   fontDisplay: Bitter
   fontBody: Cabin
@@ -172,11 +172,11 @@ nav:
 hero:
   tag: Las Cruces, New Mexico
   headline: |-
-    Small-batch jalapeño salsa,
+    Jalapeño salsa with authentic ingredients and flavors,
     made the way home tastes.
   slogan: “A Taste of Home”
-  subtext: One recipe, made in small batches and pressed fresh here in the Mesilla
-    Valley.
+  subtext: One recipe, made with authentic ingredients and flavors, pressed fresh
+    here in the Mesilla Valley.
   image: /images/IngredientsHIREZRB.png
   imageAlt: Fresh tomato, jalapeño, garlic and lime, the four ingredients of La
     Mesillera salsa
@@ -189,8 +189,8 @@ hero:
     label: Stock Our Salsa
     href: stock.html
 badges:
-  - Small Batch
-  - Real Ingredients
+  - Authentic Ingredients & Flavors
+  - Pressed Fresh
   - Made in Las Cruces, NM
 product:
   title: One salsa. Done right.
