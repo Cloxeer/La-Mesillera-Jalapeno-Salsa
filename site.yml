@@ -139,6 +139,8 @@ meta:
   description: Jalapeño salsa made with authentic ingredients and flavors, from
     Las Cruces, New Mexico. Tomato, jalapeño, garlic, lime. Call or text to
     order, or ask your local store to carry it.
+integrations:
+  customDomain: lamesillerajalapenosalsa.com
 theme:
   fontDisplay: Bitter
   fontBody: Cabin
