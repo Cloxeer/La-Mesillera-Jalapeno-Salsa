@@ -22,6 +22,16 @@
       ]
     },
     {
+      "id": "salsa",
+      "label": "The Salsa",
+      "path": "salsa.html",
+      "sections": [
+        "nav",
+        "product",
+        "footer"
+      ]
+    },
+    {
       "id": "ingredients",
       "label": "Ingredients",
       "path": "ingredients.html",

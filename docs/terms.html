@@ -38,6 +38,9 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+/* Hide the scrollbar chrome sitewide; scrolling itself still works. */
+html, body { scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { width: 0; height: 0; display: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
@@ -204,23 +207,49 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
   width: 44px; height: 44px; padding: 10px; margin-right: -10px;
   border-radius: 8px;
 }
-.ham span { display: block; width: 100%; height: 2px; background: var(--color-text); border-radius: 2px; }
-
-.mob {
-  display: none;
-  flex-direction: column;
-  position: fixed; top: 68px; left: 0; right: 0; z-index: 199;
-  background: var(--color-background);
-  border-bottom: 2px solid var(--color-text);
-  padding: 8px 0 16px;
+.ham span {
+  display: block; width: 100%; height: 2px;
+  background: var(--color-text); border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease;
 }
-.mob.open { display: flex; }
+/* Bars morph into an X when the menu is open (bar centers sit 7px apart: 2px bar + 5px gap). */
+.ham.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.ham.open span:nth-child(2) { opacity: 0; }
+.ham.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Lock the page behind the full-screen menu so only the menu scrolls. */
+body.mob-open { overflow: hidden; }
+
+/* Full-screen overlay that fades in below the fixed nav bar. */
+.mob {
+  position: fixed; inset: 68px 0 0 0; z-index: 199;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 28px;
+  background: var(--color-background);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+.mob.open { opacity: 1; visibility: visible; pointer-events: auto; }
+@media (min-width: 861px) { .mob { display: none; } }
+
+/* Links start low + faded, then rise into place in a top-to-bottom cascade. */
 .mob a {
-  padding: 14px 32px;
-  font-size: 15px; font-weight: 700;
-  letter-spacing: 0.06em; text-transform: uppercase;
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out, color 0.15s;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 28px; font-weight: 700;
+  letter-spacing: 0.04em; text-transform: uppercase;
   color: var(--color-muted);
 }
+.mob.open a { opacity: 1; transform: translateY(0); }
+.mob.open a:nth-child(1) { transition-delay: 0.05s; }
+.mob.open a:nth-child(2) { transition-delay: 0.10s; }
+.mob.open a:nth-child(3) { transition-delay: 0.15s; }
+.mob.open a:nth-child(4) { transition-delay: 0.20s; }
+.mob.open a:nth-child(5) { transition-delay: 0.25s; }
+/* Closing: drop the stagger so everything leaves together, quickly. */
+.mob:not(.open) a { transition-delay: 0s; transition-duration: 0.2s; }
+.mob a:hover { color: var(--color-text); }
 .mob a.mob-phone { color: var(--color-text); }
 
 /* ---------- hero ---------- */
@@ -848,7 +877,7 @@ html.layout-mobile .mob a { padding: 14px 20px; }
     <img data-halite-path='["nav","logo"]' data-halite-image="true" src="./images/wordmark.png" class="nav-logo-img nav-logo-img--natural" alt="La Mesillera Jalapeño Salsa logo"/>
   </a>
   <ul class="nav-links" role="list">
-    <li><a href="index.html#salsa"><span data-halite-path='["nav","links","0","label"]'>The Salsa</span></a></li>
+    <li><a href="salsa.html"><span data-halite-path='["nav","links","0","label"]'>The Salsa</span></a></li>
     <li><a href="ingredients.html"><span data-halite-path='["nav","links","1","label"]'>Ingredients</span></a></li>
     <li><a href="buy.html"><span data-halite-path='["nav","links","2","label"]'>Where to Buy</span></a></li>
     <li><a href="stock.html"><span data-halite-path='["nav","links","3","label"]'>Stock Us</span></a></li>
@@ -857,17 +886,17 @@ html.layout-mobile .mob a { padding: 14px 20px; }
     <span class="lang-toggle-opt" data-lang="en">EN</span>
     <span class="lang-toggle-sep" aria-hidden="true">/</span>
     <span class="lang-toggle-opt" data-lang="es">ES</span>
-  </button><a href="tel:5754496063" class="nav-phone"><span data-halite-path='["business","phone"]'>575-449-6063</span></a><button class="ham" aria-label="Open menu" onclick="document.querySelector('.mob').classList.toggle('open')">
+  </button><a href="tel:5754496063" class="nav-phone"><span data-halite-path='["business","phone"]'>575-449-6063</span></a><button class="ham" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
     <span></span><span></span><span></span>
   </button></div>
 </nav>
 
-<div class="mob" role="navigation" aria-label="Mobile navigation">
-  <a href="index.html#salsa" onclick="document.querySelector('.mob').classList.remove('open')"><span data-halite-path='["nav","links","0","label"]'>The Salsa</span></a>
-  <a href="ingredients.html" onclick="document.querySelector('.mob').classList.remove('open')"><span data-halite-path='["nav","links","1","label"]'>Ingredients</span></a>
-  <a href="buy.html" onclick="document.querySelector('.mob').classList.remove('open')"><span data-halite-path='["nav","links","2","label"]'>Where to Buy</span></a>
-  <a href="stock.html" onclick="document.querySelector('.mob').classList.remove('open')"><span data-halite-path='["nav","links","3","label"]'>Stock Us</span></a>
-  <a href="tel:5754496063" class="mob-phone" onclick="document.querySelector('.mob').classList.remove('open')"><span data-halite-path='["business","phone"]'>575-449-6063</span></a>
+<div class="mob" id="mobile-nav" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+  <a href="salsa.html"><span data-halite-path='["nav","links","0","label"]'>The Salsa</span></a>
+  <a href="ingredients.html"><span data-halite-path='["nav","links","1","label"]'>Ingredients</span></a>
+  <a href="buy.html"><span data-halite-path='["nav","links","2","label"]'>Where to Buy</span></a>
+  <a href="stock.html"><span data-halite-path='["nav","links","3","label"]'>Stock Us</span></a>
+  <a href="tel:5754496063" class="mob-phone"><span data-halite-path='["business","phone"]'>575-449-6063</span></a>
 </div>
 
 <main>
@@ -904,7 +933,7 @@ html.layout-mobile .mob a { padding: 14px 20px; }
     <a href="mailto:LaMesilleraJalapenoSalsa@gmail.com"><span data-halite-path='["business","email"]'>LaMesilleraJalapenoSalsa@gmail.com</span></a>
   </div>
   <nav class="footer-links" aria-label="Footer navigation">
-    <a href="index.html#salsa"><span data-halite-path='["footer","links","0","label"]'>The Salsa</span></a>
+    <a href="salsa.html"><span data-halite-path='["footer","links","0","label"]'>The Salsa</span></a>
     <a href="ingredients.html"><span data-halite-path='["footer","links","1","label"]'>Ingredients</span></a>
     <a href="buy.html"><span data-halite-path='["footer","links","2","label"]'>Where to Buy</span></a>
     <a href="stock.html"><span data-halite-path='["footer","links","3","label"]'>Stock Us</span></a>
@@ -945,17 +974,34 @@ document.addEventListener('click', function(e) {
   var mob = document.querySelector('.mob');
   var ham = document.querySelector('.ham');
   if (!mob || !ham) return;
-  function closeMenu() { mob.classList.remove('open'); }
+  function setMenuOpen(open) {
+    mob.classList.toggle('open', open);
+    ham.classList.toggle('open', open);
+    document.body.classList.toggle('mob-open', open);
+    ham.setAttribute('aria-expanded', open ? 'true' : 'false');
+    ham.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    mob.setAttribute('aria-hidden', open ? 'false' : 'true');
+  }
+  ham.addEventListener('click', function () {
+    setMenuOpen(!mob.classList.contains('open'));
+  });
+  // Tapping a link closes the menu before the page navigates.
+  mob.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setMenuOpen(false); });
+  });
   // Tapping anywhere outside the open menu — but not the hamburger toggle itself — closes it.
   document.addEventListener('click', function (e) {
     if (!mob.classList.contains('open')) return;
     if (mob.contains(e.target) || ham.contains(e.target)) return;
-    closeMenu();
+    setMenuOpen(false);
   });
   // Scrolling closes it so the menu never floats detached over the page.
   window.addEventListener('scroll', function () {
-    if (mob.classList.contains('open')) closeMenu();
+    if (mob.classList.contains('open')) setMenuOpen(false);
   }, { passive: true });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mob.classList.contains('open')) setMenuOpen(false);
+  });
 })();
 
 (function () {

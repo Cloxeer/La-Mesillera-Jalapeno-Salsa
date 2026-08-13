@@ -161,7 +161,7 @@ nav:
   logo: /images/wordmark.png
   links:
     - label: The Salsa
-      href: index.html#salsa
+      href: salsa.html
     - label: Ingredients
       href: ingredients.html
     - label: Where to Buy
@@ -326,7 +326,7 @@ terms:
 footer:
   links:
     - label: The Salsa
-      href: index.html#salsa
+      href: salsa.html
     - label: Ingredients
       href: ingredients.html
     - label: Where to Buy
