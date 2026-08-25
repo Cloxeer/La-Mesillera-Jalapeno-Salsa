@@ -134,6 +134,10 @@ i18n:
       continuo del sitio significa que aceptas la versión vigente.
     terms.body.8: ¿Preguntas? Llámanos o envíanos un mensaje al 575-449-6063, o
       escribe a LaMesilleraJalapenoSalsa@gmail.com.
+    notFound.title: Página no encontrada
+    notFound.body: Esa página no está en este sitio. Vuelve al inicio para ver la
+      salsa, los ingredientes y dónde comprarla.
+    labels.backToHome: Volver al inicio
 meta:
   title: La Mesillera Jalapeño Salsa | Made in Las Cruces, NM
   description: Jalapeño salsa made with authentic ingredients and flavors, from
@@ -327,6 +331,10 @@ terms:
       site means you accept the current version.
     - Questions? Call or text us at 575-449-6063, or email
       LaMesilleraJalapenoSalsa@gmail.com.
+notFound:
+  title: Page not found
+  body: That page isn’t on this site. Head home for the salsa, the ingredients,
+    and where to buy a jar.
 footer:
   links:
     - label: The Salsa

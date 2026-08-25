@@ -80,6 +80,16 @@
         "terms",
         "footer"
       ]
+    },
+    {
+      "id": "notFound",
+      "label": "404",
+      "path": "404.html",
+      "sections": [
+        "nav",
+        "notFound",
+        "footer"
+      ]
     }
   ]
 }
