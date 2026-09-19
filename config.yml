@@ -1,0 +1,467 @@
+identity:
+  id: ws_036a13f5249a
+project:
+  version: 2
+  projectType: product
+  sections:
+    - nav
+    - badges
+    - hero
+    - product
+    - footer
+  pages:
+    - id: home
+      label: Home
+      path: index.html
+      sections:
+        - nav
+        - badges
+        - hero
+        - product
+        - footer
+    - id: salsa
+      label: The Salsa
+      path: salsa.html
+      sections:
+        - nav
+        - product
+        - footer
+    - id: ingredients
+      label: Ingredients
+      path: ingredients.html
+      sections:
+        - nav
+        - ingredients
+        - footer
+    - id: buy
+      label: Where to Buy
+      path: buy.html
+      sections:
+        - nav
+        - whereToBuy
+        - footer
+    - id: stock
+      label: Stock Us
+      path: stock.html
+      sections:
+        - nav
+        - stock
+        - footer
+    - id: privacy
+      label: Privacy Policy
+      path: privacy.html
+      sections:
+        - nav
+        - privacy
+        - footer
+    - id: terms
+      label: Terms of Use
+      path: terms.html
+      sections:
+        - nav
+        - terms
+        - footer
+    - id: notFound
+      label: "404"
+      path: 404.html
+      sections:
+        - nav
+        - notFound
+        - footer
+site:
+  type: product
+  bilingual: true
+  i18n:
+    es:
+      business.slogan: Un Sabor de Casa
+      nav.links.0.label: La Salsa
+      nav.links.1.label: Ingredientes
+      nav.links.2.label: Dónde Comprar
+      nav.links.3.label: Para Tiendas
+      hero.tag: Las Cruces, Nuevo México
+      hero.headline: |-
+        Salsa de jalapeño con ingredientes y sabores auténticos,
+        hecha como sabe el hogar.
+      hero.slogan: «Un Sabor de Casa»
+      hero.subtext: Una sola receta, hecha con ingredientes y sabores auténticos,
+        preparada fresca aquí en el Valle de Mesilla.
+      hero.primaryCta.label: Ordenar por Teléfono
+      hero.secondaryCta.label: Vende Nuestra Salsa
+      badges.0: Ingredientes y Sabores Auténticos
+      badges.1: Recién Prensada
+      badges.2: Hecha en Las Cruces, NM
+      product.title: Una salsa. Hecha bien.
+      product.description: "Hacemos una sola cosa y la hacemos bien: una salsa de
+        jalapeño con un poco de picor y mucho sabor. Un picante en su punto, sin
+        quemar."
+      product.highlights.0: ¡Saborea el picante sin que te queme!
+      product.highlights.1: Para los amantes de la salsa que la quieren justa y perfecta
+      product.highlights.2: ¡Un poco de picor, mucho sabor!
+      product.highlights.3: Un picante en su punto
+      product.note: Embotellada profesionalmente y estable en anaquel, para que cada
+        frasco sepa igual que el anterior.
+      ingredients.title: Cuatro ingredientes. Nada más.
+      ingredients.subtitle: Todo lo que hay en el frasco, nada que no puedas
+        pronunciar. Mejor con un buen plato de totopos.
+      ingredients.items.0.name: Tomate
+      ingredients.items.0.description: La base roja y madura de cada frasco.
+      ingredients.items.1.name: Jalapeño
+      ingredients.items.1.description: El picor. Picante verde y fresco, en su punto.
+      ingredients.items.2.name: Ajo
+      ingredients.items.2.description: Calidez y profundidad en cada bocado.
+      ingredients.items.3.name: Limón
+      ingredients.items.3.description: Un toque cítrico para rematar.
+      story.title: La receta detrás de La Mesillera
+      story.paragraphs.0: La Mesillera nació en la cocina de Terry Evaro en Las
+        Cruces, Nuevo México. Es una receta familiar hecha para los amantes de
+        la salsa que la quieren justa y perfecta.
+      story.paragraphs.1: Cada frasco lo prepara para nosotros The Fresh Chile Co., un
+        productor de alimentos comercial aquí mismo en Las Cruces. La misma
+        receta, los mismos ingredientes, hechos con estándares comerciales de
+        seguridad alimentaria. Un sabor de casa, en cada frasco.
+      whereToBuy.title: Dónde encontrarla
+      whereToBuy.intro: Hoy somos una operación pequeña, y estamos creciendo. Así
+        puedes conseguir un frasco ahora mismo.
+      whereToBuy.options.0.title: Ordena directo
+      whereToBuy.options.0.description: Llama o manda mensaje al 575-449-6063 y te
+        ayudamos. Recogida local en Las Cruces, NM.
+      whereToBuy.options.1.title: En tiendas locales
+      whereToBuy.options.1.description: Estamos trabajando para llevar La Mesillera a
+        tiendas y mercados por todo el Valle de Mesilla. Vuelve pronto.
+      whereToBuy.note: ¿No nos ves en tu tienda favorita? Pídeles que vendan La
+        Mesillera, o avísanos y nos comunicamos.
+      stock.title: Vende La Mesillera en tu tienda
+      stock.body: Un solo producto que vender — fácil de pedir, fácil de resurtir, y
+        siempre la misma gran salsa. Nos encantaría ver La Mesillera en tu
+        anaquel.
+      stock.points.0: Estable en anaquel y lista para la venta
+      stock.points.1: Producida en una instalación comercial en Las Cruces
+      stock.points.2: Una sola salsa, fácil de pedir y resurtir
+      stock.cta.label: Habla con Terry
+      stock.note: O escribe a LaMesilleraJalapenoSalsa@gmail.com y te respondemos.
+      contact.title: Salúdanos
+      contact.body: Preguntas, pedidos, o solo para hablar de salsa. Nos encantaría
+        saber de ti.
+      footer.links.0.label: La Salsa
+      footer.links.1.label: Ingredientes
+      footer.links.2.label: Dónde Comprar
+      footer.links.3.label: Para Tiendas
+      privacy.title: Política de Privacidad
+      privacy.updated: "Última actualización: julio de 2026"
+      privacy.body.0: La Mesillera Jalapeño Salsa («nosotros») respeta tu privacidad.
+        Esta política explica qué información recopilamos a través de este sitio
+        web y cómo la usamos.
+      privacy.body.1: No vendemos productos ni aceptamos pagos a través de este sitio,
+        y no te pedimos crear una cuenta. Puedes navegar por todas las páginas
+        sin darnos ninguna información personal.
+      privacy.body.2: Si decides llamarnos, enviarnos un mensaje o un correo para
+        hacer un pedido o una pregunta, recibimos los datos de contacto que
+        compartes con nosotros, como tu nombre, número de teléfono o correo
+        electrónico. Usamos esa información solo para responderte y para cumplir
+        con los pedidos que nos solicitas.
+      privacy.body.3: Para entender cómo se usa nuestro sitio, podemos usar analíticas
+        respetuosas con la privacidad y sin cookies, que cuentan las visitas a
+        las páginas y nos muestran cuáles son populares. Esto no te identifica
+        personalmente ni instala cookies de publicidad o rastreo en tu
+        dispositivo.
+      privacy.body.4: No vendemos, alquilamos ni intercambiamos tu información
+        personal. Solo podemos compartirla con proveedores de servicios de
+        confianza que nos ayudan a operar el negocio, como la cocina comercial
+        que embotella nuestra salsa, y solo en la medida necesaria para
+        atenderte.
+      privacy.body.5: Puedes contactarnos en cualquier momento para preguntar qué
+        información tenemos sobre ti, corregirla o pedir que la eliminemos, y
+        haremos todo lo posible por atender tu solicitud.
+      privacy.body.6: Este sitio no está dirigido a niños, y no recopilamos
+        información a sabiendas de menores de 13 años.
+      privacy.body.7: Podemos actualizar esta Política de Privacidad de vez en cuando.
+        Cuando lo hagamos, cambiaremos la fecha de «última actualización» que
+        aparece arriba.
+      privacy.body.8: ¿Preguntas sobre esta política? Llámanos o envíanos un mensaje
+        al 575-449-6063, o escribe a LaMesilleraJalapenoSalsa@gmail.com.
+      terms.title: Términos de Uso
+      terms.updated: "Última actualización: julio de 2026"
+      terms.body.0: Bienvenido al sitio web de La Mesillera Jalapeño Salsa. Al usar
+        este sitio, aceptas estos Términos de Uso. Si no estás de acuerdo, por
+        favor no uses el sitio.
+      terms.body.1: Este sitio web se ofrece como información general sobre nuestra
+        salsa y nuestro pequeño negocio. No es una oferta para vender productos
+        en línea. Los pedidos se coordinan directamente con nosotros por
+        teléfono, mensaje o correo.
+      terms.body.2: Trabajamos para mantener la información de este sitio precisa y
+        actualizada, pero no garantizamos que sea completa o esté libre de
+        errores. Los detalles del producto, la disponibilidad y los precios
+        pueden cambiar en cualquier momento sin previo aviso.
+      terms.body.3: Todo el contenido de este sitio, incluidos nuestro nombre,
+        logotipo, fotografías y texto, pertenece a La Mesillera Jalapeño Salsa y
+        no puede copiarse ni reutilizarse sin nuestro permiso.
+      terms.body.4: Este sitio y su contenido se ofrecen «tal cual», sin garantías de
+        ningún tipo. En la máxima medida permitida por la ley, no somos
+        responsables de ningún daño que surja del uso de este sitio.
+      terms.body.5: Nuestro sitio puede enlazar a otros sitios web que no controlamos.
+        No somos responsables del contenido ni de las prácticas de esos sitios.
+      terms.body.6: Estos Términos de Uso se rigen por las leyes del Estado de Nuevo
+        México, Estados Unidos.
+      terms.body.7: Podemos actualizar estos Términos de Uso de vez en cuando. El uso
+        continuo del sitio significa que aceptas la versión vigente.
+      terms.body.8: ¿Preguntas? Llámanos o envíanos un mensaje al 575-449-6063, o
+        escribe a LaMesilleraJalapenoSalsa@gmail.com.
+      notFound.title: Página no encontrada
+      notFound.body: Esa página no está en este sitio. Vuelve al inicio para ver la
+        salsa, los ingredientes y dónde comprarla.
+      labels.backToHome: Volver al inicio
+  meta:
+    title: La Mesillera Jalapeño Salsa | Made in Las Cruces, NM
+    description: Jalapeño salsa made with authentic ingredients and flavors, from
+      Las Cruces, New Mexico. Tomato, jalapeño, garlic, lime. Call or text to
+      order, or ask your local store to carry it.
+    favicon: /images/logo.png
+  integrations:
+    customDomain: lamesillerajalapenosalsa.com
+    googleAnalyticsId: G-49THWE6WQS
+  theme:
+    fontDisplay: Bitter
+    fontBody: Cabin
+    colorText: "#843216"
+    colorMuted: "#3f5c0a"
+    colorAccent: "#d33a11"
+    colorBackground: "#f7db9a"
+    colorSurface: "#fdd566"
+  business:
+    name: La Mesillera Jalapeño Salsa
+    slogan: A Taste of Home
+    phone: 575-449-6063
+    phoneTel: "5754496063"
+    email: LaMesilleraJalapenoSalsa@gmail.com
+    city: Las Cruces
+    state: NM
+    zip: "88007"
+    facebookUrl: https://www.facebook.com/
+  nav:
+    logo: /images/wordmark.png
+    links:
+      - label: The Salsa
+        href: salsa.html
+      - label: Ingredients
+        href: ingredients.html
+      - label: Where to Buy
+        href: buy.html
+      - label: Stock Us
+        href: stock.html
+    logoShape: natural
+  hero:
+    tag: Las Cruces, New Mexico
+    headline: |-
+      Jalapeño salsa with authentic ingredients and flavors,
+      made the way home tastes.
+    slogan: “A Taste of Home”
+    subtext: One recipe, made with authentic ingredients and flavors, pressed fresh
+      here in the Mesilla Valley.
+    image: /images/IngredientsHIREZRB.png
+    imageAlt: Fresh tomato, jalapeño, garlic and lime, the four ingredients of La
+      Mesillera salsa
+    divider: /images/ChipsAndSalsaRB.png
+    dividerScale: "50"
+    primaryCta:
+      label: Order by Phone
+      href: tel:5754496063
+    secondaryCta:
+      label: Stock Our Salsa
+      href: stock.html
+  badges:
+    - Authentic Ingredients & Flavors
+    - Pressed Fresh
+    - Made in Las Cruces, NM
+  product:
+    title: One salsa. Done right.
+    description: "We make one thing and we make it well: a jalapeño salsa with a
+      little kick and a lot of flavor. Heat that hits just right, without the
+      burn."
+    image: /images/SalsaJarRBTBRB.png
+    imageAlt: Jar of La Mesillera jalapeño salsa
+    highlights:
+      - Taste the Heat Without the Burn!
+      - For Salsa Lovers Who Like It Just Perfect
+      - A Little Kick, a Lot of Flavor!
+      - Heat that hits just right
+    note: Professionally bottled and shelf-stable, so every jar tastes the same as
+      the last.
+  ingredients:
+    title: Four ingredients. That's it.
+    subtitle: Everything in the jar, nothing you can't pronounce. Best with a big
+      bowl of chips.
+    image: ""
+    imageAlt: Tortilla chips with a bowl of La Mesillera jalapeño salsa
+    items:
+      - name: Tomato
+        description: The ripe, red base of every jar.
+        image: /images/TomatoRB.png
+        imageAlt: Fresh ripe tomato
+      - name: Jalapeño
+        description: The kick. Fresh green heat that hits just right.
+        image: /images/JalapenoRB.png
+        imageAlt: Fresh green jalapeño pepper
+      - name: Garlic
+        description: Warmth and depth in every bite.
+        image: /images/GarlicRB.png
+        imageAlt: Bulb of fresh garlic
+      - name: Lime
+        description: A squeeze of bright to finish it off.
+        image: /images/LimeRB.png
+        imageAlt: Fresh lime cut in half
+  story:
+    title: The recipe behind La Mesillera
+    paragraphs:
+      - La Mesillera started in Terry Evaro's kitchen in Las Cruces, New Mexico.
+        It's a family recipe made for salsa lovers who like it just perfect.
+      - Every jar is pressed for us by The Fresh Chile Co., a commercial food
+        producer right here in Las Cruces. Same recipe, same ingredients, made
+        to commercial food-safety standards. A taste of home, in every jar.
+  whereToBuy:
+    title: Where to find it
+    intro: We're a small operation today, and growing. Here's how to get a jar right
+      now.
+    options:
+      - title: Order direct
+        description: Call or text 575-449-6063 and we'll set you up. Local pickup in Las
+          Cruces, NM.
+      - title: Local shelves
+        description: We're working on bringing La Mesillera to stores and markets around
+          the Mesilla Valley. Check back soon.
+    note: Don't see us at your favorite store? Ask them to carry La Mesillera, or
+      let us know and we'll reach out.
+  stock:
+    title: Carry La Mesillera in your store
+    body: Just one product to carry — simple to order, easy to reorder, and always
+      the same great salsa. We'd love to see La Mesillera on your shelf.
+    points:
+      - Shelf-stable and ready for retail
+      - Produced in a commercial facility in Las Cruces
+      - One salsa, simple to order and reorder
+    cta:
+      label: Talk to Terry
+      href: tel:5754496063
+    note: Or email LaMesilleraJalapenoSalsa@gmail.com and we'll get back to you.
+  contact:
+    title: Say hello
+    body: Questions, orders, or just salsa talk. We'd love to hear from you.
+  privacy:
+    title: Privacy Policy
+    updated: "Last updated: July 2026"
+    body:
+      - La Mesillera Jalapeño Salsa ("we", "us") respects your privacy. This
+        policy explains what information we collect through this website and how
+        we use it.
+      - We do not sell products or take payments through this site, and we do
+        not require you to create an account. You can browse every page without
+        giving us any personal information.
+      - If you choose to call, text, or email us to place an order or ask a
+        question, we receive the contact details you share with us, such as your
+        name, phone number, or email address. We use that information only to
+        respond to you and to fulfill orders you ask us to.
+      - To understand how our site is used, we may use privacy-friendly,
+        cookieless analytics that count page visits and show us which pages are
+        popular. This does not identify you personally and does not set
+        advertising or tracking cookies on your device.
+      - We do not sell, rent, or trade your personal information. We may share
+        it only with trusted service providers who help us operate the business,
+        such as the commercial kitchen that bottles our salsa, and only to the
+        extent needed to serve you.
+      - You can contact us at any time to ask what information we have about
+        you, to correct it, or to ask us to delete it, and we will do our best
+        to honor your request.
+      - This site is not directed at children, and we do not knowingly collect
+        information from anyone under 13.
+      - We may update this Privacy Policy from time to time. When we do, we will
+        change the "last updated" date shown above.
+      - Questions about this policy? Call or text us at 575-449-6063, or email
+        LaMesilleraJalapenoSalsa@gmail.com.
+  terms:
+    title: Terms of Use
+    updated: "Last updated: July 2026"
+    body:
+      - Welcome to the La Mesillera Jalapeño Salsa website. By using this site,
+        you agree to these Terms of Use. If you do not agree, please do not use
+        the site.
+      - This website is provided for general information about our salsa and our
+        small business. It is not an offer to sell products online. Orders are
+        arranged directly with us by phone, text, or email.
+      - We work to keep the information on this site accurate and up to date,
+        but we do not guarantee that it is complete or error-free. Product
+        details, availability, and pricing may change at any time without
+        notice.
+      - All content on this site, including our name, logo, photographs, and
+        text, belongs to La Mesillera Jalapeño Salsa and may not be copied or
+        reused without our permission.
+      - This site and its content are provided "as is," without warranties of
+        any kind. To the fullest extent allowed by law, we are not liable for
+        any damages arising from your use of this site.
+      - Our site may link to other websites we do not control. We are not
+        responsible for the content or practices of those sites.
+      - These Terms of Use are governed by the laws of the State of New Mexico,
+        United States.
+      - We may update these Terms of Use from time to time. Continued use of the
+        site means you accept the current version.
+      - Questions? Call or text us at 575-449-6063, or email
+        LaMesilleraJalapenoSalsa@gmail.com.
+  notFound:
+    title: Page not found
+    body: That page isn’t on this site. Head home for the salsa, the ingredients,
+      and where to buy a jar.
+  footer:
+    links:
+      - label: The Salsa
+        href: salsa.html
+      - label: Ingredients
+        href: ingredients.html
+      - label: Where to Buy
+        href: buy.html
+      - label: Stock Us
+        href: stock.html
+    copyright: © 2026 La Mesillera Jalapeño Salsa · Las Cruces, NM 88007
+  imageDisplay:
+    hero.divider:
+      objectPosition: 50% 50%
+      objectFit: contain
+      rotation: 0
+      scale: 1.3061
+      offset:
+        x: 14.77
+        y: 0
+      area:
+        x: 0.409
+        y: 7.514
+        width: 76.566
+        height: 84.971
+      sourceCrop:
+        x: 0.409
+        y: 0
+        width: 76.566
+        height: 100
+    product:
+      objectPosition: 50% 50%
+      objectFit: contain
+      rotation: 0
+      scale: 1.3104
+      offset:
+        x: 0.22
+        y: 4.01
+      area:
+        x: -85.82
+        y: 8.824
+        width: 270.429
+        height: 76.231
+      sourceCrop:
+        x: 16.943
+        y: 0
+        width: 64.903
+        height: 100
+  footerCredit:
+    enabled: true
+    prefix: Created by
+    haliteText: ""
+    haliteUrl: ""
+    conjunction: ""
+    arrowheadText: Fintech Lab powered by Nusenda Credit Union
+    arrowheadUrl: https://arrowheadcenter.nmsu.edu/program/nusenda_fintech_lab/index.html
+    programLogo: /images/fintech-lab-logo.png
